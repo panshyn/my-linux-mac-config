@@ -1,0 +1,69 @@
+#SXHKD
+#SHCMD
+super + shift + Return
+	alacritty
+super + space
+	rofi -show drun -show-icons
+super + shift + n
+	thunar
+super + shift + f
+	firefox
+super + n
+	nnn
+#AUDIO
+#pulseaudio -
+super + shift + F1
+	pactl set-sink-volume alsa_output.pci-0000_00_05.0.analog-stereo -5%
+#pulseaudio +
+super + shift + F2
+	pactl set-sink-volume alsa_output.pci-0000_00_05.0.analog-stereo +5%
+super + shift + F3
+	amixer set Master mute
+super + shift + F4
+	amixer set Master unmute
+#RELOAD
+super + shift + q
+	bspc quit & killall polybar
+super + shift + r
+	bspc wm -r
+super + ctrl + r
+	pkill -USR1 sxhkd
+#SCREENSHOTS
+Print	
+	shutter -s
+#DESKTOPS
+super + 1
+	bspc desktop -f 1
+super + 2
+	bspc desktop -f 2
+super + 3
+	bspc desktop -f 3
+super + 4
+	bspc desktop -f 4
+super + 5
+	bspc desktop -f 5
+#WINDOW_MANAGMENT
+super + shift + c
+	bspc  node -c
+super + h
+	bspc node -z left -20 0
+super + k
+	bspc node -z top 0 -20
+super + shift + h
+	bspc node -z left 20 0
+super + shift + k
+	bspc node -z top 0 20
+super + o
+	bspc node -f west
+super + p
+	bspc node -f east
+super + shift + o
+	bspc node -f north
+super + shift + p
+	bspc node -f south
+super + f
+	bspc node -t floating
+super + t
+	bspc node -t tiled
+#super + m
+#super + shift + m

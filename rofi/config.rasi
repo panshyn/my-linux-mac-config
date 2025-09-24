@@ -1,0 +1,19 @@
+
+//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+
+//@theme "/home/panshyn/.local/share/rofi/themes/simple-tokyonight.rasi"
+
+//@theme "/home/panshyn/.local/share/rofi/themes/nord.rasi"
+
+//@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+configuration {
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+}
+
+//@theme "~/.config/rofi/gruvbox-material.rasi"
+
+@theme "/usr/share/rofi/themes/dmenu.rasi"
