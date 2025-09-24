@@ -1,22 +1,50 @@
-[general]
-live_config_reload = true
-import = [
-    "~/.config/alacritty/themes/themes/ashes_dark.toml"
-]
-
-[colors.primary]
-background = "#0f151a"
-
-[font]
-normal = { family = "Iosevka Nerd Font Propo", style = "Regular" }
-size = 16
-
-[terminal.shell]
-program = "/opt/homebrew/bin/fish"
-
-[cursor]
-style = { shape = "Beam", blinking = "Always" }
-
 [window]
-padding = { x = 10, y = 10 }
-opacity = 0.98
+opacity         = 0.95
+
+[cursor.style]
+shape = "Block"
+blinking = "Always"
+[terminal.shell]
+program = "/usr/bin/zsh"
+args = ["--login"]
+[colors.primary]
+background = "#1e1e1e"
+[font]
+builtin_box_drawing = true
+size                = 11.5
+[font.normal]
+family = "Jetbrains Mono Nerd Font"
+style  = "Medium"
+
+[font.bold]
+family = "Jetbrains Mono Nerd Font"
+style  = "Bold"
+
+[font.italic]
+family = "Jetbrains Mono Nerd Font"
+style  = "Italic"
+
+[font.bold_italic]
+family = "Jetbrains Mono Nerd Font"
+style  = "Bold Italic"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key    = "F11"
+[mouse]
+hide_when_typing = true
+
+[[keyboard.bindings]]
+key = "F12"
+chars = "doas pacman -Syu && polybar-msg cmd restart"
+
+[general]
+#import = [
+#	"~/.config/alacritty/themes/themes/miasma.toml"
+#
+#import = [
+#       "~/.config/alacritty/themes/themes/moonlight_ii_vscode.toml"
+#]
+import = [
+       "~/.config/alacritty/themes/themes/ashes_dark.toml"
+]
